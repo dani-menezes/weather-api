@@ -1,5 +1,6 @@
 package finleap.weather.external;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.google.gson.Gson;
@@ -11,15 +12,15 @@ import finleap.weather.util.HttpRestUtil;
 @Component
 public class OpenWeatherMapApi {
 	
-	private final String openWeatherMapDomain = "http://api.openweathermap.org";
-		
+	@Value("${api.token}")
 	private String appId;
+	@Value("${api.version}")
 	private String apiVersion;
+	@Value("${api.domain}")
+	private String openWeatherMapDomain;
 	private HttpRestUtil http;
 	
 	public OpenWeatherMapApi() {
-		appId = "27d8e761c1c76424a7add9caf88407f9";
-		apiVersion = "2.5";
 		http = new HttpRestUtil();
 	}
 	
