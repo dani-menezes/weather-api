@@ -21,7 +21,6 @@ public class OpenWeatherMapApi {
 		appId = "27d8e761c1c76424a7add9caf88407f9";
 		apiVersion = "2.5";
 		http = new HttpRestUtil();
-		System.out.println(appId);
 	}
 	
 	public WeatherDataDTO getWeatherData (String city, Integer days, String unit) throws WeatherApiException {
