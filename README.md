@@ -6,11 +6,6 @@
 - Maven
 
 
-## How to tests
-```
-mvn test
-```
-
 ## How to run (standalone)
 ```
 mvn package && java -jar target/weather-api-1.0.0.jar
