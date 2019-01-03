@@ -38,7 +38,7 @@ curl "localhost:8080/data/?city=Berlin&days=5"
 ```
 #### Response
 ```js
-{"pressureAvg":1032.74,"minAvg":6.24,"maxAvg":6.55,"city":"Berlin","days":3,"unit":"metric","errorMessage":null}
+{"pressureAvg":1036.87,"minAvg":-0.47,"maxAvg":-0.28,"city":"Berlin","days":5,"unit":"metric","errorMessage":null}
 ```
 
 #### Call
@@ -47,7 +47,7 @@ curl "localhost:8080/data/?city=Paris&days=5"
 ```
 #### Response
 ```js
-{"pressureAvg":1029.12,"minAvg":-4.51,"maxAvg":-3.23,"city":"Paris","days":3,"unit":"metric","errorMessage":null}
+{"pressureAvg":1041.31,"minAvg":-2.95,"maxAvg":-1.74,"city":"Paris","days":5,"unit":"metric","errorMessage":null}
 ```
 
 ## Docker
